@@ -27,9 +27,7 @@ class CashRegister
 
   def items
     item_list = []
-    self.add_item.each do |title, price, quantity|
-      item_list << title
-    end
+    item_list << title
     return item_list
   end
 end
