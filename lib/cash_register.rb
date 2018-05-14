@@ -8,7 +8,6 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = nil)
-    @item_list << title
     if quantity == nil
       @total += price
       @item_list << title
