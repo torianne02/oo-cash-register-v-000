@@ -28,9 +28,8 @@ class CashRegister
     if @discount == nil
       "There is no discount to apply."
     else
-      money_saved = (@discount/100.0).to_i * @total
-      discounted_price = @total - money_saved
-      return "After the discount, the total comes to $#{discounted_price}."
+      @total = @ total - ((@discount/100.0).to_i * @total)
+      return "After the discount, the total comes to $#{self.total}."
     end
   end
 
