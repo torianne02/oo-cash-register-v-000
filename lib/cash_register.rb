@@ -19,6 +19,7 @@ class CashRegister
       item_total_price = price * quantity
       @total += item_total_price
       quantity.times do @item_list << total
+      end
     end
   end
 
