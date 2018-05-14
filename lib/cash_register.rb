@@ -6,6 +6,8 @@ class CashRegister
     @discount = discount
   end
 
+  item_array = []
+
   def add_item(title, price, quantity = nil)
     if quantity == nil
       @total += price
@@ -13,6 +15,7 @@ class CashRegister
       item_total_price = price * quantity
       @total += item_total_price
     end
+    item_array << title
   end
 
   def apply_discount
