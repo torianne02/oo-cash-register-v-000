@@ -18,8 +18,7 @@ class CashRegister
     else
       item_total_price = price * quantity
       @total += item_total_price
-      quantity.times do |i|
-        @item_list << title
+      quantity.times do @item_list << total
       end
     end
   end
@@ -39,5 +38,5 @@ class CashRegister
   end
 
   def void_last_transaction
-    
+
 end
