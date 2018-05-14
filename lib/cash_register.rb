@@ -14,7 +14,7 @@ class CashRegister
     else
       item_total_price = price * quantity
       @total += item_total_price
-      quantity.times do |title|
+      quantity.times do |i|
         @item_list << title
       end
     end
