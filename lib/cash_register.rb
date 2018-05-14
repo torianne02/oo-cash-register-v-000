@@ -19,4 +19,5 @@ class CashRegister
     money_saved = @discount * @total
     discounted_price = @total - money_saved
     puts "After the discount, the total comes to $#{discounted_price}."
+  end
 end
