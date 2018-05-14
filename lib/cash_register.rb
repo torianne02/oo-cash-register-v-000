@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :title
 
   def initialize(discount = nil)
     @total = 0
@@ -27,7 +27,7 @@ class CashRegister
 
   def items
     item_list = []
-    item_list << title
+    item_list << @title
     return item_list
   end
 end
