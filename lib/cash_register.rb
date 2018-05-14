@@ -27,7 +27,7 @@ class CashRegister
     end
   end
 
-  def items(title)
+  def items
     return @item_list
   end
 end
