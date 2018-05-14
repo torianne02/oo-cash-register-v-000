@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount, :item_array
+  attr_accessor :total, :discount, :item_list
 
   def initialize(discount = nil)
     @total = 0
@@ -13,7 +13,7 @@ class CashRegister
       item_total_price = price * quantity
       @total += item_total_price
     end
-    @item_array << title
+    @item_list << title
   end
 
   def apply_discount
@@ -27,8 +27,6 @@ class CashRegister
   end
 
   def items(title)
-    item_list = []
-    item_list << title
     return item_list
   end
 end
