@@ -31,4 +31,5 @@ class CashRegister
       item_list << title
     end
     return item_list
+  end
 end
