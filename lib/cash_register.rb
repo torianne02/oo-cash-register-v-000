@@ -7,6 +7,10 @@ class CashRegister
     @item_list = []
   end
 
+  def self.total
+    @total
+  end
+
   def add_item(title, price, quantity = nil)
     if quantity == nil
       @total += price
@@ -33,4 +37,7 @@ class CashRegister
   def items
     return @item_list
   end
+
+  def void_last_transaction
+    
 end
