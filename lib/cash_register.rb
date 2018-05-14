@@ -24,4 +24,11 @@ class CashRegister
       return "After the discount, the total comes to $#{discounted_price}."
     end
   end
+
+  def items
+    item_list = []
+    self.add_item.each do |title, price, quantity|
+      item_list << title
+    end
+    return item_list
 end
