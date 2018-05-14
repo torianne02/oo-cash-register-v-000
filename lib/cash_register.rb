@@ -11,9 +11,11 @@ class CashRegister
     @item_list << title
     if quantity == nil
       @total += price
+      @item_list << title
     else
       item_total_price = price * quantity
       @total += item_total_price
+      @item_list << title.times(quantity)
     end
   end
 
