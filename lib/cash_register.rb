@@ -25,9 +25,9 @@ class CashRegister
     end
   end
 
-  def items
+  def items(title)
     item_list = []
-    item_list << @title
+    item_list << title
     return item_list
   end
 end
